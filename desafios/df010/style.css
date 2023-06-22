@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: android;
+    src: url('pacote-projeto-d010/fontes/idroid.otf') format('opentype');
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #c5ebd6;
+}
+
+header{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: linear-gradient(to bottom,  #3c8c31,#1a220c, #153c24);
+    color: white;
+    margin: 0px;
+    padding: 10px;
+}
+
+header > h1 {
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+header > p{
+    text-align: center;
+    padding: 5px;
+}
+
+nav{
+    background-color: #153c24;
+    padding: 5px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.39);
+}
+nav > a{
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+nav > a:hover{
+    background-color: black;
+    color: #3c8c31;
+}
+/*não sabia que dava pra configurar assim com min-widht e max-width*/
+main{
+    background-color: white;
+    min-width: 300px;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 1px 5px 10px 3px rgba(0, 0, 0, 0.479);
+}
+
+main p > a{
+    font-weight: bold;
+    text-decoration: none;
+    color: #3c8c31;
+}
+
+article{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+article > h1, h2{
+background-color: #3c8c31b6;
+font-family: android;
+}
+
+p{
+    margin: 20px 1px;
+    text-indent: 2em;
+}
+
+p > a:hover{
+    text-decoration: underline;
+}
+
+p > strong{
+    color: #3c8c31;
+
+}
+/*não sabia que dava pra configurar a imagem inserida assim com min-widht e max-widht*/
+picture{
+    min-width: 500px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    display: block;
+}
+
+ .pequena{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+/* Não sabia sobre p position: relative */
+div.video {
+        background-color: #3c8c31;
+        margin: 0px -20px 30px -20px;
+        padding: 20px;
+        padding-bottom: 500px;
+        position: relative;
+
+}
+/*o video>iframe não sabia configurar dessa forma então copiei codigo*/
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside{
+    background-color: #8ff1829c;
+    padding: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
+ }
+
+aside > h3{
+    color: wheat;
+    background-color: #3c8c31;
+    padding: 5px;
+    margin: -10px -10px 0px -10px;
+}
+/*não sabia colocar o 'list-style-type' e nem 'list=style-position' então copiei codigo*/
+aside > ul{
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+
+footer{
+    background-color: #153c24;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    padding: 0px;
+    
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    
+}
+ 
+a:hover{
+    color: #3c8c31;
+    text-decoration: underline;
+}
